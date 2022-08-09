@@ -1,0 +1,88 @@
+:root {
+    --cor-primaria: darkmagenta;
+    --cor-secundaria: rgb(239, 97, 177);
+    --cor-do-texto: #ffffff;
+    --sombra-do-texto: 0px 0px 5px #4b4b4b;
+}
+
+body {
+    box-sizing: border-box;
+    background: linear-gradient(120deg, var(--cor-secundaria), var(--cor-primaria)) no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    text-align: center;
+    max-height: 50vw;
+    margin: 5vw 26vw;
+    overflow: hidden;
+}
+
+#Bola {
+    border-radius: 50%;
+    max-width: 40vw;
+    z-index: -10;
+}
+
+hr {
+    max-width: 38vw;
+}
+
+#FotoPerfil {
+    position: relative;
+    top: -40vw;
+    border-radius: 50%;
+    width: 15vw;
+    box-shadow: 5px 5px 10px #4b4b4b;
+}
+
+.Usuario-Cartao {
+    text-align: center;
+    position: relative;
+    top: -40vw;
+}
+
+.Usuario-Estilo-Primario,
+.MenuHorizontal {
+    font-size: larger;
+    font-weight: bolder;
+    color: var(--cor-do-texto);
+    text-shadow: var(--sombra-do-texto);
+}
+
+.Usuario-Estilo-Secundario {
+    margin: 0;
+    font-size: larger;
+    color: var(--cor-do-texto);
+    text-shadow: var(--sombra-do-texto);
+}
+
+.Usuario-Estilo-Terciario {
+    margin: 0;
+    font-size: small;
+    font-weight: 450;
+    color: var(--cor-do-texto);
+    text-shadow: var(--sombra-do-texto);
+}
+
+.MenuHorizontal {
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+.MenuHorizontal a {
+    text-decoration: none;
+    color: var(--cor-do-texto);
+}
+
+.MenuHorizontal :hover {
+    background-color: #ffffff;
+    color: darkmagenta;
+    text-shadow: none;
+    padding: 0.5vw;
+    transition-duration: 0.3s;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #4b4b4b;
+}
